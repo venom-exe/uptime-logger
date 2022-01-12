@@ -80,6 +80,27 @@ client.on('message', async (message) => {
 
     if (message.content.startsWith('=status')) {
       const bot = client.users.cache.get(config.botID);
+      const embed = new Discord.MessageEmbed()
+    embed.setColor('GOLD');
+    embed.setTitle(`STATUS LOGGER | ${bot.username}`);
+    embed.setTimestamp();
+    embed.setFooter("YT : Venom EXE");
+    if (bot.presence.status === 'offline') {
+      embed.setDescription(`\u200b\n${offline}| [**${bot.tag}**](https://discord.com/users/${bot.id}) is **${bot.presence.status}**\n\u200b`);
+    } else
+
+      if (bot.presence.status === 'online') {
+        embed.setDescription(`\u200b\n${online}| ${bot.tag}[**${bot.tag}**](https://discord.com/users/${bot.id}) is **${bot.presence.status}**\n\u200b`);
+      } else
+
+        if (bot.presence.status === 'idle') {
+          embed.setDescription(`\u200b\n${idle}| [**${bot.tag}**](https://discord.com/users/${bot.id}) is **${bot.presence.status}**\n\u200b`);
+        } else
+
+          if (bot.presence.status === 'dnd') {
+            embed.setDescription(`\u200b\n${dnd}| [**${bot.tag}**](https://discord.com/users/${bot.id}) is **${bot.presence.status}**\n\u200b`);
+          };
+    message.channel.send(embed);
     };
 });
 
