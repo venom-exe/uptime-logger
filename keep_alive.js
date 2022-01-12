@@ -15,6 +15,6 @@ var listener = app.listen(process.env.PORT, function () {
 });
 
 setInterval(() => {
-    http.get(config.projecturl);
-    console.log("BOOSTED : " + config.projecturl)
+    http.get(config.url);
+    console.log("BOOSTED : " + config.url)
 }, 270000);
