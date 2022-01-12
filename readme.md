@@ -2,9 +2,11 @@
 ### [FOLLOW THIS VIDEO TO KNOW HOW IT WORKS :)]()
 
 # Built With
-<h5>Discord.js</h5>
-<h5>Express</h5>
-<h5>Quick.db</h5>
+```
+Discord.js
+Express
+Quick.db
+```
 
 # SETUP
 
