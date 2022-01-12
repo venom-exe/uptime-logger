@@ -8,10 +8,6 @@ var idle = config.emoji.idle;
 var dnd = config.emoji.dnd;
 const channel = config.channelID;
 const client = new Discord.Client();
-const editJsonFile = require("edit-json-file", {
-  autosave: true
-});
-let file = editJsonFile(`./config.json`);
 
 client.on('ready', () => {
   console.log(`STARTED CLIENT : ${client.user.tag}`);
