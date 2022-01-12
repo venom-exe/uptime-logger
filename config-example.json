@@ -1,0 +1,13 @@
+{
+  "botID": "",
+  "channelID": "",
+
+  "emoji": {
+    "online": "<:bd_online:875248751822921778>",
+    "offline": "<:bd_offline:875248801114386442>",
+    "dnd": "<:bd_dnd:875248859394228224>",
+    "idle": "<:bd_idle:875248908744396830>"
+  },
+
+  "projecturl": "[dont use https://.... | use http://...] enter your website url which you get after hosting it on glitch/replit or any other..."
+}
