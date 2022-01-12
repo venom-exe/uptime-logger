@@ -1,5 +1,5 @@
 {
-  "name": "status-bot",
+  "name": "uptime-logger",
   "author": "venom-exe",
   "version": "1.0.0",
   "description": "This bot will help you monitor your Bot's Status.",
